@@ -8,7 +8,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class ResumeLiteService {
-  private _restUrl = 'http://nvlapi.herokuapp.com/cv';
+  private _restUrl = 'https://nvlapi.herokuapp.com/cv';
 
   constructor(private _http: HttpClient) {}
 
