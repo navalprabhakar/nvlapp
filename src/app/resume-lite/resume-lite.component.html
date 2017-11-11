@@ -22,12 +22,11 @@
 		</p>
 		<hr>
 		<h6>Qualifications</h6>
-		<table class="table table-striped table-bordered table-sm">
+		<table class="table table-striped table-bordered .table-responsive table-sm">
 			<thead>
 				<tr>
 					<th>Degree</th>
 					<th>Institution</th>
-					<th>Date</th>
 					<th>Percentage</th>
 				</tr>
 			</thead>
@@ -36,7 +35,6 @@
 					*ngFor="let qualification of resumeLite.education.qualifications">
 					<td>{{qualification.degree.name}}</td>
 					<td>{{qualification.institution}}</td>
-					<td>{{qualification.degreeDate}}</td>
 					<td>{{qualification.percentage}}</td>
 				</tr>
 			</tbody>
