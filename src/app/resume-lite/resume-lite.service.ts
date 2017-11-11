@@ -1,3 +1,4 @@
+import { ApiResponse } from '../common/apiresponse';
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import {Observable} from 'rxjs/Observable';
@@ -12,8 +13,8 @@ export class ResumeLiteService {
 
   constructor(private _http: HttpClient) {}
 
-  getResume(): Observable<string> {
-    return this._http.get<string>(this._restUrl)
+  getResume(): Observable<ApiResponse> {
+    return this._http.get<ApiResponse>(this._restUrl)
       .map((res) => res)
       .do(data => console.log('resume summary downloaded'))
         .catch(this.handleError);
