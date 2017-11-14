@@ -2,7 +2,7 @@
 
 <div class="card">
 	<div class="card-header">{{title}}</div>
-	<div class="card-block">
+	<div *ngIf="resumeLite" class="card-block">
 		<h5 class="card-title">{{resumeLite.candidate.name}},
 			{{resumeLite.candidate.city}}, {{resumeLite.candidate.country}}</h5>
 		<p class="card-text"><em>(Mail- {{resumeLite.candidate.email}}, Profile-
