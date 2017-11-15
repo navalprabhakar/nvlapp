@@ -1,5 +1,5 @@
 import { Candidate } from './candidate';
-import { Education } from './education';
+import { Education } from '../education/model/education';
 export class Resume {
   constructor(
     public candidate: Candidate,
