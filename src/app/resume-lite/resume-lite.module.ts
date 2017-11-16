@@ -6,6 +6,7 @@ import {RouterModule} from '@angular/router';
 import { ResumeLiteRouterModule } from './/resume-lite-router.module';
 import { ExpertiseComponent } from './expertise/expertise.component';
 import { EducationComponent } from './education/education.component';
+import { RatingComponent } from './expertise/rating/rating.component';
 
 @NgModule({
   imports: [
@@ -13,7 +14,7 @@ import { EducationComponent } from './education/education.component';
     ResumeLiteRouterModule,
   ],
   declarations: [
-    ResumeLiteComponent, ExpertiseComponent, EducationComponent],
+    ResumeLiteComponent, ExpertiseComponent, EducationComponent, RatingComponent],
   providers: [ResumeLiteService]
 })
 export class ResumeLiteModule {}

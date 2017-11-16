@@ -1,0 +1,52 @@
+.rating {
+   display: flex;
+   justify-content: flex-start;
+   background-color: whitesmoke;
+   padding:5px;
+   flex-direction: column;
+   flex-wrap: wrap;
+   margin-top:  5px;
+}
+
+.rating-heading {
+    display: flex;
+    margin-left: 2px;
+}
+
+.rating-items {
+    display: flex;
+    margin-left: 0;
+    margin-bottom: 2px;
+    flex-wrap: wrap;
+}
+
+.rating-item {
+    display: flex;
+    margin-left:2px;
+    margin-top: 2px;
+    /*min-height: 40px;*/
+}
+
+.rating-label {
+    background-color: white;
+    border-style: solid;
+    border-color: lightgray;
+    border-right-color: white;
+    font-size: 0.70rem;
+    min-width: 180px;
+}
+
+.rating-stars {
+    display: flex;
+    flex-direction: row;
+    background-color: slategray;
+    color: white;
+    border-style: solid;    
+    border-color: slategray;
+    font-size: 0.40rem;
+    min-width: 48px;
+}
+
+.rating-star {
+    margin-left:2px;
+}

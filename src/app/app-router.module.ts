@@ -1,14 +1,11 @@
 import {NgModule} from '@angular/core';
 import {RouterModule} from '@angular/router';
 import {HomeComponent} from './home/home.component';
+import {APP_ROUTES} from './app-routes';
 
 @NgModule({
   imports: [
-    RouterModule.forRoot([
-      {path: 'home', component: HomeComponent},
-      {path: '', redirectTo: 'home', pathMatch: 'full'},
-      {path: '**', redirectTo: 'home', pathMatch: 'full'}
-    ], {useHash: true})
+    RouterModule.forRoot(APP_ROUTES, { useHash: true })
   ],
   exports: [RouterModule],
   declarations: []

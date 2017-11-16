@@ -1,0 +1,14 @@
+<div *ngFor="let expertise of expertises">
+  <div class="rating">
+    <div class="rating-heading">{{expertise.expertiseType.description | titlecase}}</div>
+    <div class="rating-items">
+      <div class="rating-item" *ngFor="let competency of expertise.competencies">
+        <div class="rating-label">{{competency.skill.description}}
+        </div>
+        <div class="rating-stars"><div class="rating-star" *ngFor="let i of [1,2,3,4,5]">
+        <i class="fa fa-sm fa-star"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
