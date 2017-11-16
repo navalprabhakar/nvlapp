@@ -32,8 +32,8 @@
     border-style: solid;
     border-color: lightgray;
     border-right-color: white;
-    font-size: 0.70rem;
-    min-width: 180px;
+    font-size: 0.80rem;
+    min-width: 230px;
 }
 
 .rating-stars {
