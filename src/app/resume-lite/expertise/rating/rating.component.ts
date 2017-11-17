@@ -16,11 +16,11 @@ export class RatingComponent implements OnInit {
   ngOnInit() {
   }
 
-  createRange(number){
-    var items: number[] = [];
-    for(var i = 1; i <= number; i++){
-       items.push(i);
-    }
-    return items;
+  createRange(num:number):number[]{
+    var list: number[] = [];
+    for(var i = 1; i <= num; i++){
+      list.push(i);
+   }
+   return list;
   }
 }
