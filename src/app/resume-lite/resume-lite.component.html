@@ -19,11 +19,11 @@
 			<b>What I look forward to - </b>{{resumeLite.milestonesToGo}}
 		</p>
 		<hr>
-		<app-education [education]="resumeLite.education"></app-education>
-		<hr>
 		<h5>Experience</h5>
+		<p class="card-text">{{resumeLite.experience.summary}}</p>
 		<app-expertise [expertises]="resumeLite.experience.expertises"></app-expertise>
-
+		<hr>
+		<app-education [education]="resumeLite.education"></app-education>
 		<hr>
 	</div>
 	<div class="card-footer text-muted">Updated 2 days ago.</div>
