@@ -1,0 +1,12 @@
+.fa {
+    margin: 1px;
+    padding-top: 6px;
+    font-size: 14px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 55%;
+    background-color:darkslategray;
+    color:white;
+}
